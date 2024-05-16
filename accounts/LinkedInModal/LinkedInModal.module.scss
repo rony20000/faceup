@@ -1,0 +1,17 @@
+.modalContent {
+  > h3,
+  > div {
+    margin-bottom: 20px;
+  }
+
+  > div:last-child {
+    margin-bottom: 0;
+  }
+}
+.buttons {
+  text-align: right;
+  margin-top: 20px;
+  .add {
+    margin-right: 16px;
+  }
+}

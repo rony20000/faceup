@@ -1,0 +1,53 @@
+@import '../../../../../styles/variables.module.scss';
+
+.campaignMain {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid $secondary-light-color;
+    padding-bottom: 0.5rem;
+
+    .title {
+      font-size: $h5-font-size;
+      font-weight: 600;
+    }
+
+    svg {
+      font-size: 2rem;
+      color: $white-color;
+    }
+  }
+
+  .limitsForm {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    @media (max-width: $sm) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .limit {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .title {
+      font-size: $h5-font-size;
+      font-weight: 500;
+    }
+
+    .desc {
+      font-size: $body2-font-size;
+      color: $secondary-light-color;
+    }
+  }
+}

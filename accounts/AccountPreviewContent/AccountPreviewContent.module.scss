@@ -1,0 +1,46 @@
+@import '../../../styles/variables.module.scss';
+
+.drawerMain {
+  width: 600px;
+  height: 100vh;
+  overflow: auto;
+  background-color: $secondary-color;
+  padding: 2rem 2rem;
+  position: relative;
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $secondary-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .content {
+    padding: 10px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-size: 1rem;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .actionsFooter {
+    padding: 1rem;
+    background-color: $secondary-color;
+    position: sticky;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+  }
+}

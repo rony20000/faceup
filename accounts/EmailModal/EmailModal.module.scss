@@ -1,0 +1,73 @@
+@import '../../../styles/variables.module.scss';
+
+.modalContent {
+  > h3,
+  > div {
+    margin-bottom: 20px;
+  }
+
+  > h4 {
+    margin-bottom: 10px;
+  }
+  > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    text-align: right;
+
+    .add {
+      margin-right: 16px;
+    }
+  }
+}
+
+.inputs {
+  > h3,
+  > div {
+    margin-bottom: 20px;
+  }
+}
+
+.authCode {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.oAuthUrl {
+  color: $primary-dark-color;
+  margin-left: 0.25rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.clientIdList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+}
+
+.clientIdBox {
+  width: 100%;
+  display: block;
+  overflow-wrap: break-word;
+  white-space: wrap;
+  background-color: $primary-color;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.copyBtn {
+  margin-top: -0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
